@@ -1,0 +1,47 @@
+.buttonLinks {
+    display: inline-block;
+    background-color: #ea99d5;
+    border-radius: 10px;
+    border: 4px #cccccc;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 220px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.buttonLinks span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.buttonLinks span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonLinks:hover {
+    background-color: #ea99d5;
+}
+
+.buttonLinks:hover span {
+    padding-right: 25px;
+}
+
+.buttonLinks:hover span:after {
+    opacity: 1;
+    right: 0;
+}

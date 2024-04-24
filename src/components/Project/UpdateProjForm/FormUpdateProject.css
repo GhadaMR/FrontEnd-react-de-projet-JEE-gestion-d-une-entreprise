@@ -1,0 +1,60 @@
+form {
+    display: grid;
+    margin: 1cm;
+    grid-row-gap: 2em;
+}
+
+button {
+    display: inline-block;
+    background-color: #c32283;
+    border-radius: 10px;
+    border: 4px #cccccc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #c277ae;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+input {
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    width: 30%;
+}
